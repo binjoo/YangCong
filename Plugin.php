@@ -21,10 +21,10 @@ class YangCong_Plugin implements Typecho_Plugin_Interface {
     }
 
     public static function config(Typecho_Widget_Helper_Form $form) {
-        $yc_id = new Typecho_Widget_Helper_Form_Element_Text('yc_id', NULL, 'anfjRSd7oMpUCMGiSP6XnvgRDgleRXxn', _t('应用 ID'), '啦啦啦啦');
+        $yc_id = new Typecho_Widget_Helper_Form_Element_Text('yc_id', NULL, NULL, _t('应用 ID'), '啦啦啦啦');
         $form->addInput($yc_id);
 
-        $yc_key = new Typecho_Widget_Helper_Form_Element_Text('yc_key', NULL, 'hXZXSMJNMnt7jHqWlnr6', _t('应用 KEY'), '啦啦啦啦');
+        $yc_key = new Typecho_Widget_Helper_Form_Element_Text('yc_key', NULL, NULL, _t('应用 KEY'), '啦啦啦啦');
         $form->addInput($yc_key);
 
         $yc_input = new Typecho_Widget_Helper_Form_Element_Radio('yc_input', array('1' => '是', '0' => '否'), '0', '是否关闭传统登陆', '关闭后仅能使用扫码登陆。');
